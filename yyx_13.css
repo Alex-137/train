@@ -1,0 +1,68 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+.background {
+    margin: 10px;
+}
+.header {
+    width: auto;
+    height: 130px;
+    display: flex;
+    background-color: #030b4f;
+}
+.header .head {
+    width: 374px;
+    height: 72px;
+    position: relative;
+    margin: auto;
+    align-items: center;
+}
+.header .head img {
+    width: 57px;
+    height: 57px;
+    vertical-align: bottom;
+}
+.header .head .title {
+    font-size: 50px;
+    color: white;
+    font-family: 宋体;
+    display: inline-block;
+}
+.content {
+    margin-top: 3px;
+    overflow: hidden;
+}
+.content .left {
+    float: left;
+    background: #f1f5fe;
+    width: 30%;
+    height: 500px;
+}
+.content .left .menu {
+    margin: 20px;
+    margin-left: 30px;
+}
+.content .left .menu li {
+    line-height: 1.8em;
+}
+.content .right {
+    text-align: center;
+}
+.content .right .coffeename {
+    font-size: 28px;
+    font-family: 宋体;
+    text-align: left;
+    line-height: 2.4em;
+}
+.content .right .introduce {
+    text-align: left;
+}
+.bottom {
+    color: white;
+    text-align: center;
+    clear: both;
+    background: #030b4f;
+    line-height: 2.0em;
+    margin-top: 3px;
+}
