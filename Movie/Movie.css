@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background1 {
+    width: 100%;
+    background: #ff4c4f;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.head p,
+.head .function a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.head .user {
+    height: 60px;
+    line-height: 60px;
+}
+
+.head .user .picture {
+    width: 35px;
+    height: 39.2px;
+    vertical-align: middle;
+}
+
+.head .user .username {
+    display: inline-block;
+    color: #fff;
+}
+
+.head .function {
+    height: 60px;
+    line-height: 60px;
+    text-align: right;
+}
+
+.background2 {
+    width: 100%;
+}
+
+.content {
+    width: 1200px;
+    margin: auto;
+}
+
+.content h4 {
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.content hr {
+    width: 50px;
+    height: 3px;
+    background: #500314;
+    margin-top: 5px;
+    margin: auto;
+}
+
+.content .bg {
+    background: #fdedee;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display: block;
+    border: 1px solid #f6cdc9;
+}
+
+.content img {
+    width: 220px;
+}
+
+.content p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.content .fmovies {
+    width: auto;
+}
+
+.content .films {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.content .fbooks {
+    clear: both;
+}
+
+.background3 {
+    width: 100%;
+    background: #800013;
+}
+
+.foot {
+    clear: both;
+    width: 1200px;
+    height: 250px;
+    background: #800013;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.background3 p {
+    color: #fff;
+}
+
+.foot p {
+    /* display: inline-block; */
+    /* width: 60%; */
+    /* margin: 0% 4% 0% 6%; */
+    font-family: 黑体;
+    font-size: 20px;
+    word-break: break-all;
+    line-height: 250px;
+}
+
+.foot .code {
+    width: 200px;
+    height: 200px;
+    /* margin: 0% 8% 0% 2%; */
+    vertical-align: middle;
+    /* display: inline; */
+}
+
+.background3 .c2 {
+    clear: both;
+    height: 49px;
+}
+
+.background3 .c2 hr {
+    border-color: #62000d3a;
+    width: 85%;
+    margin: auto;
+}
+
+.background3 .c2 p {
+    text-align: center;
+    line-height: 49px;
+    font-size: 13px;
+    font-family: 黑体;
+}
