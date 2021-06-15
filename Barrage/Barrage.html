@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Barrage.css">
+    <script src="jquery.min.js"></script>
+    <title>发射弹幕</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="screen"></div>
+        <div class="input">
+            <input type="text">
+            <div class="buttons">
+                <button class="btn shoot">发射</button>
+                <button class="btn clear">清屏</button>
+                <button class="btn opacity">弹幕透明</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            var op = false;
+            $('.shoot').click(function() {
+                var txt = $('input').val();
+                var span = $("<span></span>");
+                var fontsize = parseInt(Math.random() * 40) + 20;
+                var top = parseInt(Math.random() * 400) - 20;
+                var color1 = parseInt(Math.random() * 256);
+                var color2 = parseInt(Math.random() * 256);
+                var color3 = parseInt(Math.random() * 256);
+                var color = `rgb(${color1},${color2},${color3})`;
+                top = top < 20 ? '30px' : top + 'px';
+                fontsize = fontsize + 'px';
+                span.css('position', 'absolute').css('top', top).css('right', '0').css('color', color).css('font-size', fontsize);
+                if (op) {
+                    span.css('opacity', 0.2);
+                }
+                var v = Math.random() * 20000;
+                v = v < 3000 ? 5000 : v;
+                span.attr('speed', v);
+                span.html(txt);
+                $('.screen').append(span);
+                $('.screen').children().animate({
+                    right: '100%'
+                }, v, function() {
+                    $(this).remove();
+                })
+            })
+            $('.clear').click(function() {
+                $('.screen').empty();
+            })
+            $('input').keyup(function(e) {
+                if (e.keyCode == 13) {
+                    $('.shoot').click();
+                }
+            })
+            $('.opacity').click(function() {
+                op = !op;
+                if (op) {
+                    $('span').css('opactiy', 0.2);
+                } else {
+                    $('span').css('opacity', 1);
+                }
+                $('span').css('opacity');
+            })
+        })
+    </script>
+</body>
+
+</html>
