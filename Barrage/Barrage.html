@@ -54,19 +54,18 @@
             $('.clear').click(function() {
                 $('.screen').empty();
             })
-            $('input').keyup(function(e) {
-                if (e.keyCode == 13) {
+            $('input').keydown(function(e) {
+                if (e.keyCode === 13) {
                     $('.shoot').click();
                 }
             })
             $('.opacity').click(function() {
                 op = !op;
                 if (op) {
-                    $('span').css('opactiy', 0.2);
+                    $('span').css('opacity', 0.2);
                 } else {
                     $('span').css('opacity', 1);
                 }
-                $('span').css('opacity');
             })
         })
     </script>
