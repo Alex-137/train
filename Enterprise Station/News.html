@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://v5.bootcss.com/docs/examples/headers/">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons.css">
+    <link rel="stylesheet" href="Station.css">
+    <link rel="stylesheet" href="News.css">
+    <link rel="manifest" href="manifest.json">
+    <title>相关周边</title>
+    <script src="bootstrap.min.js"></script>
+    <script src="axios.min.js"></script>
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-warning" aria-label="First navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Station.html">BKPP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample01">
+                <ul class="navbar-nav me-auto mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Station.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="News.html">相关周边</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+            <a class="p-2 link-secondary" href="#">入坑须知</a>
+            <a class="p-2 link-secondary" href="#">人物介绍</a>
+            <a class="p-2 link-secondary" href="#">以爱</a>
+            <a class="p-2 link-secondary" href="#">周边</a>
+            <a class="p-2 link-secondary" href="#">剧照</a>
+            <a class="p-2 link-secondary" href="#">花絮</a>
+            <a class="p-2 link-secondary" href="#">磕糖</a>
+            <a class="p-2 link-secondary" href="#">演唱会</a>
+            <a class="p-2 link-secondary" href="#">小游戏</a>
+            <a class="p-2 link-secondary" href="#">日常</a>
+            <a class="p-2 link-secondary" href="#">混剪</a>
+            <a class="p-2 link-secondary" href="#">壁纸</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="p-4 p-md-5 mb-4 text-dark rounded bg-warning">
+            <div class="col-md-6 px-0" style="margin: 0px;">
+                <h1 class="display-4 fst-italic">bkpp周边 - 新人首单优惠推荐</h1>
+                <p class="lead my-3">我们为您精选了bkpp周边相关的535个商品，你还可以按照人气、价格、销量和评价进行筛选查找,t恤女、短袖、抱枕等商品。</p>
+                <p class="lead mb-0"><a href="#" class="text-white fw-bold">继续阅读</a></p>
+            </div>
+        </div>
+
+        <div class="row mb-2 news">
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">Featured post</h3>
+                        <div class="mb-1 text-muted" style="margin: 0;">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="img/news1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Design</strong>
+                        <h3 class="mb-0">Post title</h3>
+                        <div class="mb-1 text-muted" style="margin: 0;">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="img/news2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Design</strong>
+                        <h3 class="mb-0">Post title</h3>
+                        <div class="mb-1 text-muted" style="margin: 0;">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="img/news3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Design</strong>
+                        <h3 class="mb-0">Post title</h3>
+                        <div class="mb-1 text-muted" style="margin: 0;">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="img/news4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 100%; margin: 0 auto; display: flex;">
+            <div class="btn-group me-2" role="group" aria-label="First group">
+                <button onclick="pre()" type="button" class="btn btn-warning"><span>&laquo;</span></button>
+                <button onclick="getUrl(1)" type="button" class="btn btn-warning">1</button>
+                <button onclick="getUrl(2)" type="button" class="btn btn-warning">2</button>
+                <button onclick="getUrl(3)" type="button" class="btn btn-warning">3</button>
+                <button onclick="next()" type="button" class="btn btn-warning"><span>&raquo;</span></button>
+            </div>
+        </div>
+    </div>
+
+    <table></table>
+
+    <div class="footer container px-5 py-0 bg-warning" id="icon-grid">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5 align-items-end">
+            <div class="col d-flex align-items-start">
+                <a href="Station.html">
+                    <i class="bi bi-house-fill flex-shrink-0 me-3"></i>
+                </a>
+                <div>
+                    <h4 class="fw-bold mb-0">首页</h4>
+                    <p>BKPP个人简介<br>以你的心诠释我的爱他泰天花板</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <a href="News.html">
+                    <i class="bi bi-newspaper flex-shrink-0 me-3"></i>
+                </a>
+                <div>
+                    <h4 class="fw-bold mb-0">周边</h4>
+                    <p>BKPP同款周边<br>他泰以你的心诠释我的爱相关周边</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <a href="About.html">
+                    <i class="bi bi-pin-map-fill flex-shrink-0 me-3"></i>
+                </a>
+                <div>
+                    <h4 class="fw-bold mb-0">关于我们</h4>
+                    <p>粉丝后援会联系电话<br>感兴趣的小伙伴热烈欢迎致电联系我们</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <img src="img/code.png" alt="" width="150px" height="150px">
+            </div>
+            <div class="col d-flex align-items-end border-top border-dark" style="margin-top: 50px;">
+                <p style="line-height: 60px;">版权所有&copy;Alex</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let current = Number(window.location.href.split("?page=")[1] || 1);
+
+        function pre() {
+            if (current > 1) {
+                getUrl(current - 1);
+            }
+        }
+
+        function next() {
+            if (current < 3) {
+                getUrl(current + 1);
+            }
+        }
+
+        function getUrl(page) {
+            window.location.href = `?page=${page}`
+        }
+        page(current);
+
+        function page(page) {
+            current = page;
+            $('.news').empty();
+            axios.get(`https://lingqule.papamk.com/wp-json/w2w/v1/products?page=${page}`).then(function(res) {
+                console.log(res.data);
+                for (let i = 0; i < 8; i++) {
+                    let div1 = $('<div class="col-md-6"></div>');
+                    let div2 = $('<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"></div>');
+                    let div3 = $('<div class="col p-4 d-flex flex-column position-static"></div>');
+                    let div4 = $('<div class="col-auto d-none d-lg-block"></div>');
+
+                    div1.append(div2);
+                    div2.append(div3);
+                    div2.append(div4);
+                    div1.attr('id', res.data[i].id);
+                    div3.append(`<strong class="d-inline-block mb-2 text-primary">Shopping</strong>`);
+                    div3.append(`<h3 class="mb-0">${res.data[i].name}</h3>`);
+                    div3.append(`<div class="mb-1 text-muted" style="margin: 0;">${res.data[i].date_created}</div>`);
+                    div3.append(`<p class="card-text mb-auto">以你的心诠释我的爱周边泰国BKPP同款扶桑花短袖t恤...</p>`);
+                    div3.append(`<a href="News-detail.html?id=${$(div1).attr('id')}&page=${page}" class="stretched-link">继续阅读</a>`);
+                    div4.append(`<img width='200px' hight='250px' src=${res.data[i].images[0].src}>`);
+                    $('.news').append(div1);
+                }
+                // $('.news a').click(function() {
+                //     window.location.href = `./News-detail.html?id=${$(this).attr('id')}`
+                // })
+            })
+        }
+
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() != 0) {
+                    $("#toTop").fadeIn();
+                } else {
+                    $("#toTop").fadeOut();
+                }
+            });
+            $("body").append("<div id=\"toTop\" style=\"border:1px solid #444;background:#333;color:#fff;text-align:center;padding:6px 10px 0px 10px;position:fixed;bottom:30px;right:30px;cursor:pointer;display:none;font-family:verdana;font-size:22px;\">^</div>");
+            $("#toTop").click(function() {
+                $("body,html").animate({
+                    scrollTop: 0
+                }, 10);
+            });
+        })
+    </script>
+</body>
+
+</html>

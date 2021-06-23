@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://v5.bootcss.com/docs/examples/headers/">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons.css">
+    <link rel="stylesheet" href="Station.css">
+    <link rel="manifest" href="manifest.json">
+    <title>关于我们</title>
+    <script src="bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-warning" aria-label="First navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Station.html" style="margin: 0px;">BKPP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample01">
+                <ul class="navbar-nav me-auto mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Station.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="News.html">相关周边</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="About.html">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <div class="title">
+            <hr>
+            <i class="bi bi-flower3"></i>
+            <h2 class="pb-0 text-center">关于我们</h2>
+            <i class="bi bi-flower3"></i>
+            <hr>
+        </div>
+        <iframe src="map.html" width="697px" height="550px" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <div class="footer container px-5 py-0 bg-warning" id="icon-grid">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5 align-items-end">
+            <div class="col d-flex align-items-start">
+                <a href="Station.html">
+                    <i class="bi bi-house-fill flex-shrink-0 me-3"></i>
+                </a>
+                <div>
+                    <h4 class="fw-bold mb-0">首页</h4>
+                    <p>BKPP个人简介<br>以你的心诠释我的爱他泰天花板</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <a href="News.html">
+                    <i class="bi bi-newspaper flex-shrink-0 me-3"></i>
+                </a>
+                <div>
+                    <h4 class="fw-bold mb-0">周边</h4>
+                    <p>BKPP同款周边<br>他泰以你的心诠释我的爱相关周边</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <a href="About.html">
+                    <i class="bi bi-pin-map-fill flex-shrink-0 me-3"></i>
+                </a>
+                <div>
+                    <h4 class="fw-bold mb-0">关于我们</h4>
+                    <p>粉丝后援会联系电话<br>感兴趣的小伙伴热烈欢迎致电联系我们</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <img src="img/code.png" alt="" width="150px" height="150px">
+            </div>
+            <div class="col d-flex align-items-end border-top border-dark" style="margin-top: 50px;">
+                <p style="line-height: 60px;">版权所有&copy;Alex</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() != 0) {
+                    $("#toTop").fadeIn();
+                } else {
+                    $("#toTop").fadeOut();
+                }
+            });
+            $("body").append("<div id=\"toTop\" style=\"border:1px solid #444;background:#333;color:#fff;text-align:center;padding:6px 10px 0px 10px;position:fixed;bottom:30px;right:30px;cursor:pointer;display:none;font-family:verdana;font-size:22px;\">^</div>");
+            $("#toTop").click(function() {
+                $("body,html").animate({
+                    scrollTop: 0
+                }, 10);
+            });
+        })
+    </script>
+</body>
+
+</html>
