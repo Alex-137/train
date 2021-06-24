@@ -3,9 +3,13 @@
     padding: 0;
 }
 
-body {
+.container {
     width: 1200px;
     margin: 0px auto;
+}
+
+.footer {
+    width: 100%;
 }
 
 .bd-placeholder-img {
