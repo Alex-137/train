@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <link rel="canonical" href="https://v5.bootcss.com/docs/examples/headers/">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap-icons.css">
@@ -12,6 +12,31 @@
     <link rel="manifest" href="manifest.json">
     <title>关于我们</title>
     <script src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=dLLL7r2QfsCWaL9Sdsdmzgbrq4AE0Hur"></script>
+
+    <style>
+        .container .row .col-md-5 i {
+            font-size: 20px;
+            margin: 0px 10px;
+        }
+    </style>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() != 0) {
+                    $("#toTop").fadeIn();
+                } else {
+                    $("#toTop").fadeOut();
+                }
+            });
+            $("body").append("<div id=\"toTop\" style=\"border:1px solid #444;background:#333;color:#fff;text-align:center;padding:6px 10px 0px 10px;position:fixed;bottom:30px;right:30px;cursor:pointer;display:none;font-family:verdana;font-size:22px;\">^</div>");
+            $("#toTop").click(function() {
+                $("body,html").animate({
+                    scrollTop: 0
+                }, 10);
+            });
+        })
+    </script>
 </head>
 
 <body>
@@ -46,8 +71,21 @@
             <i class="bi bi-flower3"></i>
             <hr>
         </div>
-        <iframe src="map.html" width="697px" height="550px" frameborder="0" scrolling="no"></iframe>
+        <div class="row featurette align-items-end">
+            <div class="col-md-7">
+                <div id="container" style="width: 560px; height: 340px;"></div>
+            </div>
+            <div class="col-md-5 text-start">
+                <p class="lead">普提蓬·阿萨拉塔纳功（Billkin）（比尔金）、克里特·安努艾德奇康（PP）这对cp，主演了泰国电视剧《以你的心诠释我的爱》，"เต๋" teh（Billkin Butthipong饰演），"โอ้เอ๋ว"oh-aew （PP Krit饰演）。该剧于2020年10月22日在LINE TV播出，国内可在人人视频上观看。</p>
+                <p class="lead"><i class="bi bi-map-fill"></i>地址：福州市闽侯县上街镇溪源宫路200号</p>
+                <p class="lead"><i class="bi bi-envelope-fill"></i>邮箱：1153523062@qq.com</p>
+                <p class="lead"><i class="bi bi-telephone-fill"></i>电话：18166790226</p>
+            </div>
+        </div>
+        <!-- <iframe src="map.html" width="697px" height="550px" frameborder="0" scrolling="no"></iframe> -->
     </div>
+
+    <table></table>
 
     <div class="footer container px-5 py-0 bg-warning" id="icon-grid">
 
@@ -88,22 +126,12 @@
         </div>
     </div>
 
-    <script>
-        $(function() {
-            $(window).scroll(function() {
-                if ($(this).scrollTop() != 0) {
-                    $("#toTop").fadeIn();
-                } else {
-                    $("#toTop").fadeOut();
-                }
-            });
-            $("body").append("<div id=\"toTop\" style=\"border:1px solid #444;background:#333;color:#fff;text-align:center;padding:6px 10px 0px 10px;position:fixed;bottom:30px;right:30px;cursor:pointer;display:none;font-family:verdana;font-size:22px;\">^</div>");
-            $("#toTop").click(function() {
-                $("body,html").animate({
-                    scrollTop: 0
-                }, 10);
-            });
-        })
+    <script type="text/javascript">
+        var map = new BMapGL.Map("container");
+        map.centerAndZoom(new BMapGL.Point(119.174082, 26.075686), 16);
+        map.enableScrollWheelZoom(true);
+        var marker1 = new BMapGL.Marker(new BMapGL.Point(119.174082, 26.075686));
+        map.addOverlay(marker1);
     </script>
 </body>
 
