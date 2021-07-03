@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div class="col d-flex align-items-start">
-                <img src="img/code.png" alt="" width="150px" height="150px">
+                <img data-original="img/code.png" alt="" width="150px" height="150px">
             </div>
             <div class="col d-flex align-items-end border-top border-dark" style="margin-top: 50px;">
                 <p style="line-height: 60px;">版权所有&copy;Alex</p>
@@ -115,6 +115,12 @@
         map.enableScrollWheelZoom(true);
         var marker1 = new BMapGL.Marker(new BMapGL.Point(119.174082, 26.075686));
         map.addOverlay(marker1);
+
+        $("img").lazyload({
+            // placeholder: "img/loading.gif",
+            threshold: -100,
+            effect: "fadeIn"
+        });
     </script>
 
     <script src="Station.js"></script>
