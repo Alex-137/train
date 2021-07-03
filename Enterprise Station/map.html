@@ -108,6 +108,7 @@
             var p1 = json.point.split("|")[1];
             var point = new BMap.Point(p0, p1);
             var iconImg = createIcon(json.icon);
+            console.log(iconImg);
             var marker = new BMap.Marker(point, {
                 icon: iconImg
             });

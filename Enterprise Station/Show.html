@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons.css">
+    <title>个人展示页</title>
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="jquery.lazyload.min.js"></script>
+
+    <link rel="stylesheet" href="Show.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning" aria-label="First navbar example" style="padding: 0px;">
+        <div class="head container-fluid">
+            <div class="user col-4 text-start overflow-hidden" style="margin: 0px;">
+                <img class="picture" data-original="img/head.jpg" alt="">
+                <p class="username">ONE PIECE</p>
+            </div>
+            <div class="col text-end">
+                <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="col-3 offset-5 text-end">
+                <div class="function collapse navbar-collapse" id="navbarsExample01">
+                    <ul class="navbar-nav" style="margin: 0px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fmovies">船员介绍</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fbooks">相关人物</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#talk">寻宝</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <div id="fmovies">
+                <h4>船员介绍</h4>
+                <hr>
+
+                <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5 text-center">
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character1.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">CAPTAIN</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>モンキー·D·ルフィ/Monkey·D·Luffy</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character2.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">SWORDSMAN</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>ロロノア·ゾロ/Roronoa·Zoro</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character3.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">SNIPER</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>ウソップ/Usopp</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character4.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">CHEF</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>サンジ/Sanji</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character5.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">NAVIGATOR</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>ナミ/Nami</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character6.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">DOCTOR</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>トニートニー·チョッパー/Tony Tony·Chopper</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character7.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">ARCHAEOLOGIST</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>ニコ·ロビン/Nico·Robin</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character8.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">SHIPWRIGHT</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>フランキー/Franky</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character9.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">MUSICIAN</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>ブルック/Brook</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character10.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">HELMSMAN</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>ジンベエ/Jinbe</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fbooks">
+                <h4>相关人物</h4>
+                <hr>
+                <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character1.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">CAPTAIN</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>モンキー·D·ルフィ/Monkey·D·Luffy</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character2.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">SWORDSMAN</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>ロロノア·ゾロ/Roronoa·Zoro</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character3.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">SNIPER</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>ウソップ/Usopp</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character4.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">CHEF</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>サンジ/Sanji</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character5.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">NAVIGATOR</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>ナミ/Nami</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character6.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">DOCTOR</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>トニートニー·チョッパー/Tony Tony·Chopper</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character7.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">ARCHAEOLOGIST</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>ニコ·ロビン/Nico·Robin</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character8.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">SHIPWRIGHT</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>フランキー/Franky</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character9.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">MUSICIAN</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>ブルック/Brook</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-dark bg-dark rounded-4 shadow-lg" data-original="img/character10.jpg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-3">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">HELMSMAN</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center">
+                                        <small>ジンベエ/Jinbe</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="talk" class="footer px-5 py-5 bg-warning">
+        <div class="row">
+            <div class="intro col-lg-9 d-flex align-items-center justify-content-center">
+                <p>“想要我的宝藏吗？如果想要的话，那就到海上去找吧，我全部都放在那里。”扫描二维码，一起来寻宝。</p>
+            </div>
+            <div class="col-lg-3 d-flex align-items-center">
+                <img data-original="img/code.png" alt="">
+            </div>
+            <div class="c2 col-12 align-items-end border-top border-dark" style="margin-top: 50px;">
+                <p>版权所有&copy;Alex</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("img").lazyload({
+            effect: "fadeIn"
+        });
+        $("div.card").lazyload({
+            effect: "fadeIn"
+        });
+    </script>
+    <script src="Station.js"></script>
+</body>
+
+</html>

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="Refresh" content="0;url=News.html" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://v5.bootcss.com/docs/examples/headers/">
     <link rel="stylesheet" href="bootstrap.min.css">
@@ -14,10 +15,11 @@
     <script src="bootstrap.min.js"></script>
     <script src="axios.min.js"></script>
     <script src="jquery.min.js"></script>
+    <script src="jquery.lazyload.min.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-warning" aria-label="First navbar example">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-warning" aria-label="First navbar example">
         <div class="container-fluid">
             <a class="navbar-brand" href="Station.html">BKPP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +27,7 @@
           </button>
 
             <div class="collapse navbar-collapse" id="navbarsExample01">
-                <ul class="navbar-nav me-auto mb-2">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="Station.html">首页</a>
                     </li>
@@ -90,7 +92,7 @@
                 </div>
             </div>
             <div class="col d-flex align-items-start">
-                <img src="img/code.png" alt="" width="150px" height="150px">
+                <img data-original="img/code.png" alt="" width="150px" height="150px">
             </div>
             <div class="col d-flex align-items-end border-top border-dark" style="margin-top: 50px;">
                 <p style="line-height: 60px;">版权所有&copy;Alex</p>
@@ -108,27 +110,31 @@
             request = GetRequest();
             var id = request['id'];
             var page = request['page'];
-            console.log(id);
-            // alert(page);
-            axios.get(`https://lingqule.papamk.com/wp-json/w2w/v1/products?page=${page}`).then(function(res) {
-                for (let i = 0; i < 8; i++) {
-                    if (id == res.data[i].id) {
+            axios.get(`https://www.fastmock.site/mock/ac4aafb429f32bd66b9dcbc9662ecd5f/test/yyx?page=${page}`).then(function(res) {
+                for (let i = 0; i < 9; i++) {
+                    if (id == res.data.data.list[i].id) {
                         let div1 = $('<div class="col"></div>');
                         let div2 = $('<div class="col"></div>');
                         let div3 = $('<div class="col"></div>');
                         let div4 = $('<div class="col"></div>');
 
-                        div1.append(`<img width="400px" height="500px" src="${res.data[i].images[0].src}" alt="" style="margin-bottom: 50px;">`);
+                        div1.append(`<img width="400px" height="500px" data-original="${res.data.data.list[i].image}" alt="" style="margin: 50px 0px;">`);
                         div1.append(div2);
                         div1.append(div3);
                         div1.append(div4);
-                        div2.append(`<h3 class="mb-0">${res.data[i].name}</h3>`);
-                        div3.append(`<p>价格：${res.data[i].price}￥</p>`);
-                        div4.append(`<p class="card-text">以你的心诠释我的爱周边泰国BKPP同款扶桑花短袖t恤billkin上衣pp。</p>`);
+                        div2.append(`<h3 class="mb-0">${res.data.data.list[i].name}</h3>`);
+                        div3.append(`<p>价格：￥${res.data.data.list[i].price}</p>`);
+                        div4.append(`<p class="card-text">${res.data.data.list[i].descript}</p>`);
                         $('.news').append(div1);
                         break;
                     }
                 }
+
+                $("img").lazyload({
+                    // placeholder: "img/loading.jpg",
+                    threshold: -100,
+                    effect: "fadeIn"
+                });
             })
         }
 
@@ -145,23 +151,9 @@
             }
             return theRequest;
         }
-
-        $(function() {
-            $(window).scroll(function() {
-                if ($(this).scrollTop() != 0) {
-                    $("#toTop").fadeIn();
-                } else {
-                    $("#toTop").fadeOut();
-                }
-            });
-            $("body").append("<div id=\"toTop\" style=\"border:1px solid #444;background:#333;color:#fff;text-align:center;padding:6px 10px 0px 10px;position:fixed;bottom:30px;right:30px;cursor:pointer;display:none;font-family:verdana;font-size:22px;\">^</div>");
-            $("#toTop").click(function() {
-                $("body,html").animate({
-                    scrollTop: 0
-                }, 10);
-            });
-        })
     </script>
+
+    <script src="Station.js"></script>
 </body>
 
 </html>
