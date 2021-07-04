@@ -12,6 +12,7 @@
     <title>关于我们</title>
     <script src="bootstrap.min.js"></script>
     <script src="jquery.min.js"></script>
+    <script src="jquery.lazyload.min.js"></script>
     <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=dLLL7r2QfsCWaL9Sdsdmzgbrq4AE0Hur"></script>
 
     <style>
@@ -19,13 +20,54 @@
             font-size: 20px;
             margin-right: 20px;
         }
+        
+        #container {
+            width: 600px;
+            height: 300px;
+        }
+        
+        @media (max-width: 1399.5px) {
+            #container {
+                width: 560px;
+                height: 330px;
+            }
+        }
+        
+        @media (max-width: 1199.5px) {
+            #container {
+                width: 450px;
+                height: 390px;
+            }
+        }
+        
+        @media (max-width: 991.5px) {
+            #container {
+                width: 340px;
+                height: 510px;
+            }
+        }
+        
+        @media (max-width: 767.5px) {
+            #container {
+                width: 490px;
+                height: 320px;
+            }
+        }
+        
+        @media (max-width: 520px) {
+            #container {
+                width: 100%;
+                height: 320px;
+                margin: 10px 0px 40px 0px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-warning" aria-label="First navbar example">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning" aria-label="First navbar example">
         <div class="container-fluid">
-            <a class="navbar-brand" href="Station.html">BKPP</a>
+            <a class="navbar-brand" href="Station.html" style="margin: 0px;">BKPP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -56,7 +98,7 @@
         </div>
         <div class="row featurette align-items-end">
             <div class="col-md-7">
-                <div id="container" style="width: 560px; height: 340px;"></div>
+                <div id="container"></div>
             </div>
             <div class="col-md-5 text-start">
                 <p class="lead">普提蓬·阿萨拉塔纳功（Billkin）（比尔金）、克里特·安努艾德奇康（PP）这对cp，主演了泰国电视剧《以你的心诠释我的爱》，"เต๋" teh（Billkin Butthipong饰演），"โอ้เอ๋ว"oh-aew （PP Krit饰演）。该剧于2020年10月22日在LINE TV播出，国内可在人人视频上观看。</p>
