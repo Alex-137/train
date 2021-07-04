@@ -264,7 +264,7 @@
                     div2.append(div3);
                     div2.append(div4);
                     div1.attr('id', res.data.data.list[i].id);
-                    div3.append(`<img class="card-img-top" data-original=${res.data.data.list[i].image}>`);
+                    div3.append(`<img class="lazy card-img-top" data-original=${res.data.data.list[i].image}>`);
                     div4.append(`<h5 class="card-title">${res.data.data.list[i].name}</h5>`);
                     div4.append(`<div class="mb-1 text-muted" style="margin: 0;">${res.data.data.list[i].datetime}</div>`);
                     if (res.data.data.list[i].descript.length <= 30) {
