@@ -119,7 +119,7 @@
             request = GetRequest();
             var id = request['id'];
             var page = request['page'];
-            axios.get(`https://www.fastmock.site/mock/ac4aafb429f32bd66b9dcbc9662ecd5f/test/yyx?page=${page}`).then(function(res) {
+            axios.get(`https://www.fastmock.site/mock/ac4aafb429f32bd66b9dcbc9662ecd5f/test/page?page=${page}`).then(function(res) {
                 for (let i = 0; i < 9; i++) {
                     if (id == res.data.data.list[i].id) {
                         let div1 = $('<div class="col"></div>');

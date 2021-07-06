@@ -243,7 +243,7 @@
         function page(page) {
             current = page;
             $('.news').empty();
-            axios.get(`https://www.fastmock.site/mock/ac4aafb429f32bd66b9dcbc9662ecd5f/test/yyx?page=${page}`).then(function(res) {
+            axios.get(`https://www.fastmock.site/mock/ac4aafb429f32bd66b9dcbc9662ecd5f/test/page?page=${page}`).then(function(res) {
                 console.log(res.data);
                 for (let i = 0; i < 8; i++) {
                     let div1 = $('<div class="col-md-6"></div>');
@@ -271,7 +271,7 @@
 
                 $("img").lazyload({
                     // placeholder: "img/loading.gif",
-                    threshold: -100,
+                    threshold: 100,
                     effect: "fadeIn"
                 });
                 // $('.news a').click(function() {

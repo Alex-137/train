@@ -76,11 +76,12 @@
     font-size: 70px;
     color: #ffc107;
     line-height: 130px;
+    transition: all 1s;
 }
 
 .container .point .circle i:hover {
     line-height: 110px;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 
 .container .point h5 {
